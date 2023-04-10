@@ -5,6 +5,10 @@
     <title>Optional Lab 6-1</title>
 
     <script>
+      function pageLoaded() {
+        alert("The HTML page has loaded");
+      }
+
       function vote() {
         var t = "Your favorite sport is: ";
         for (i = 0; i < document.myform.sports.length; i++) {
@@ -32,7 +36,7 @@
       }
     </script>
   </head>
-  <body>
+  <body onload="pageLoaded()">
     <h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
     <hr />
     <h4>Event Handler Examples</h4>
